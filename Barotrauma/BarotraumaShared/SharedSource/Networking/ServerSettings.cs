@@ -42,10 +42,10 @@ namespace Barotrauma.Networking
 
     partial class ServerSettings : ISerializableEntity
     {
-        public const int PacketLimitMin = 1200,
-                         PacketLimitWarning = 3500,
-                         PacketLimitDefault = 4000,
-                         PacketLimitMax = 10000;
+        public const int PacketLimitMin = 2200,
+                         PacketLimitWarning = 4500,
+                         PacketLimitDefault = 5000,
+                         PacketLimitMax = 20000;
 
         public const string SettingsFile = "serversettings.xml";
 
