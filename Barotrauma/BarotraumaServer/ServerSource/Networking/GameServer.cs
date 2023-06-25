@@ -2786,7 +2786,7 @@ namespace Barotrauma.Networking
                 {
                     counter = 0;
 
-                    if (connectedClients.Any(c => (c.Character?.IsDead ?? true) && c.InGame))
+                    if (connectedClients.Any(c => (c.Character?.IsDead ?? true) && !c.SpectateOnly && c.InGame))
                     {
                         int rays = 0;
                         List<Submarine> subs = new List<Submarine> { Submarine.MainSub };
